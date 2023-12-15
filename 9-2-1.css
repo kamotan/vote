@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*==================================================
+アコーディオンのためのcss
+===================================*/
+
+/*アコーディオン全体*/
+.accordion-area{
+    list-style: none;
+    width: 96%;
+    margin: 0 auto;
+    max-width: 900px;
+    background-image: linear-gradient(90deg, rgba(255, 0, 165, 1), rgba(191, 233, 255, 1));
+}
+.accordion-area li{
+    margin: 10px 0;
+}
+.accordion-area section {
+	border: 1px solid #fff;
+}
+.accordion-area2{
+    list-style: none;
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg, rgba(144, 245, 154, 1), rgba(4, 202, 255, 1));
+}
+.accordion-area2 li{
+    margin: 10px 0;
+}
+.accordion-area2 section {
+	border: 1px solid #fff;
+}
+.accordion-area3{
+    list-style: none;
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
+}
+.accordion-area3 li{
+    margin: 10px 0;
+}
+.accordion-area3 section {
+	border: 1px solid #fff;
+}
+.accordion-area4{
+    list-style: none;
+    width: 96%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg, rgba(253, 219, 146, 1), rgba(209, 253, 254, 1));
+}
+.accordion-area4 li{
+    margin: 10px 0;
+}
+.accordion-area4 section {
+	border: 1px solid #fff;
+}
+/*アコーディオンタイトル*/
+.title {
+    cursor: pointer;
+    font-size:1rem;
+    font-weight: normal;
+    padding: 3% 3% 3% 3%;
+    transition: all .5s ease;
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+    display: none;/*はじめは非表示*/
+    background: #f3f3f3;
+	margin:0 3% 3% 3%;
+    padding: 3%;
+}
+.block {
+    height: 100%;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+h2{
+    text-align: center;
+    margin: 30px 0;
+    font-size:1rem;
+}

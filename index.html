@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>モブウマ娘総選挙～トップページ～</title>
+        <link rel="stylesheet" type="text/css" href="mobumamusume6th.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="back.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https: //fonts.googleapis.com/css2? family= Zen+Antique & display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="9-2-1.css">
+        <script src="js/modernizr-2.6.2.min.js"></script>
+    </head>
+    <header id="header">
+        <div class="logo"><a href="index.html"><img src="https://mobumamusumesousenkyo.files.wordpress.com/2022/05/1651379031762.png?w=1024"></a></div>
+            <div id="video-area">
+                <video id="video" poster="mp4/blackout.png" webkit-playsinline playsinline muted autoplay loop>
+                    <source src="mp4/op.mp4" type="video/mp4">
+                    <source src="mp4/op.ogv" type="video/ogv">
+                    <source src="mp4/op.webm" type="video/webm">
+                </video>
+            </div>
+            <script>
+                window.addEventListener('resize', function () {
+                    var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                    if (windowWidth <= 444) {
+                        var video = document.getElementById('video');
+                        video.src = 'mp4/haikei.mp4';
+                        video.src = 'mp4/haikei.ogv';
+                        video.src = 'mp4/haikei.webm';
+                        video.play();
+                    }
+                    else{
+                        var video = document.getElementById('video');
+                        video.src = 'mp4/op.mp4';
+                        video.play();
+                    }
+                });
+            </script>
+    </header>
+        <body id="home">
+            <div id="container">
+                <h2>投票締切日：2024年2月16日</h2>
+                <div class="block">
+                    <ul class="accordion-area">
+                        <li>
+                            <section>
+                                <li>
+                                    <section>
+                                        <h1 class="title"><b>概要</b></h1>
+                                        <div class="box" style="background-image: linear-gradient(90deg, rgba(233, 233, 233, 1), rgba(172, 172, 172, 1));">
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>モブウマ娘総選挙とは？</b></h3>
+                                                    <div class="box">
+                                                        <p>ゲームアプリ「ウマ娘プリティーダービー」に登場するモブウマ娘の非公式人気投票企画です。
+                                                        <br>全て主催者個人で企画・運営しており、「ウマ娘プリティーダービー」運営元のcygames様に直接的関係はありません。
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>前回からの変更点</b></h3>
+                                                    <div class="box">
+                                                        <p>ここすき賞をリニューアルしました。
+                                                        <br>ここすき賞データベースを外部ドキュメント化しました。
+                                                        <br>殿堂入り制度を新設しました。
+                                                        <br>ウイニングライブ第2Rを新設しました。</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>モブウマ娘総選挙におけるモブウマ娘の定義</b></h3>
+                                                    <div class="box">
+                                                        <p>モブウマ娘総選挙におけるモブウマ娘の定義は、ゲーム「ウマ娘プリティーダービー」内にてモブキャラとして登場し、なおかつゲーム内機能のライブシアターにて【指定なし】を押した際に、登場する676名のキャラクター達のことを指します。そのため以下のウマ娘達は対象外です。</p>
+                                                        <ul>
+                                                            <li>CM&amp;メインストーリーに登場するモブウマ娘</li>
+                                                            <li>アニメ版モブウマ娘（ゲーム版と同名のウマ娘）</li>
+                                                            <li>シンデレラグレイ版モブウマ娘</li>
+                                                            <li>ゲーム内ボイス&amp;サポートカードに登場するモブウマ娘</li>
+                                                        </ul>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>急上賞</b></h3>
+                                                    <div class="box">
+                                                        <p>前回の総選挙から票数が一番増えたモブウマ娘に授与される賞です。
+                                                        <br>もし増加票が同数だった場合、同率増加票のモブウマ娘全員に賞が授与されます。</p>    
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>スポットライト賞</b></h3>
+                                                    <div class="box">
+                                                        <p>今回の総選挙で初めて票を得たモブウマ娘達に授与される賞です。
+                                                        <br>前回総選挙終了後に新規実装されたモブウマ娘（例：フランス組・ネモティアラなど）に関しても授与されます。</p>    
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>殿堂入り制度</b></h3>
+                                                    <div class="box">
+                                                        <p>過去の総選挙個人投票にて、三度一位を取ったモブウマ娘に適応される制度です。
+                                                        <br>結果発表の際、個人投票枠・ウイニングライブ第1Rからは除外されますが、
+                                                        <br>急上賞・スポットライト賞・ここすき賞選抜メンバーと共にウイニングライブ第2Rに登場します。</p>    
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </div>
+                                    </section>
+                                </li>
+                                
+                            </section>
+                        </li>
+                    </ul>
+                    <ul class="accordion-area2"><a href="database.html">
+                        <li>
+                            <section>
+                                <li>
+                                    <section>
+                                        <h1 class="title"><b>データベース</b></h1>
+                                    </section>
+                                </li>
+                                
+                            </section>
+                        </li>
+                    </ul></a>
+                    <ul class="accordion-area3">
+                        <li>
+                            <section>
+                                <li>
+                                    <section>
+                                        <h1 class="title"><b>ここすき賞</b></h1>
+                                        <div class="box" style="background-image: linear-gradient(90deg, rgba(233, 233, 233, 1), rgba(172, 172, 172, 1));">
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>ここすき賞とは？</b></h3>
+                                                    <div class="box">
+                                                        <p>皆さんの<a href="am/p.html"target="_blank" rel="noopener noreferrer">推しモブウマ娘</a>のここすきポイントを詰め込んだ作品を、
+                                                            <br><b>「自由部門」「テーマ部門」</b>に分けて、
+                                                            <br>主催者が面白い・トレーナーとして素晴らしいと判断した方に、
+                                                            <br>賞を授与させていただき、動画内で名前を紹介させていただいております。</p>
+                                                            <h2>今回のテーマは<b>「挑戦」</b>です。</h2>
+                                                            <p>なお今回も部門の枠に収まりきらないほど素晴らしい作品が多く投稿された場合、
+                                                            <br>特別賞を用意する可能性があります。</p>    
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>ここすき賞の注意点</b></h3>
+                                                    <div class="box">
+                                                        <p>動画内に掲載してもいい名前をフォーム内の規定箇所に記入してください。
+                                                            <br>記入は強制ではありませんが、書かれていない場合、
+                                                            <br>「名無しトレーナー」として紹介させていただきます。
+                                                            <br>
+                                                            <br>自由部門・テーマ部門同士の複数エントリーは可能です。
+                                                            <br>
+                                                            <br>フォーム内項目の文字量に収まらない場合は、代わりに画像ファイル・ドキュメントを投稿できます。
+                                                            <br>ファイル最大数は5つ、最大ファイルサイズは100MBです。
+                                                            <br>なお最大ファイルサイズを越えてしまった場合、
+                                                            <br>作品説明欄に動画が閲覧もしくはダウンロードできるリンクを記入してください。
+                                                            <br>
+                                                            <br>他人が制作した作品を投稿しないでください。
+                                                            <br>AIで制作された場合はこの作品がAI制作であることを作品説明欄に明記してください。
+                                                            <br>作品がトレースの場合はこの作品がトレースであることを作品説明欄に明記してください。
+                                                            <br>作品が共作である場合は共作をした方々の名前を作品説明欄に明記してください。
+                                                            <br>
+                                                            <br>著作権・肖像権的に危険な素材が使用されている場合は、
+                                                            <br>総選挙動画内にて流すことができないので賞の対象外となります。
+                                                            <br>その為素材・音源などはフリー素材の物を使用していただくようお願い致します。
+                                                            <br>
+                                                            <br>ここすき賞作品をSNS上で公開する場合は、結果発表動画投稿後でお願いします。
+                                                            </p>    
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><a href="https://forms.gle/JCJH11oPEFUuzsp2A"target="_blank" rel="noopener noreferrer"><b>ここすき賞フォームへ</b></a></h3>
+                                                </section>
+                                            </li>
+                                        </div>
+                                    </section>
+                                </li>
+                                
+                            </section>
+                        </li>
+                    </ul>
+                    <ul class="accordion-area4">
+                        <li>
+                            <section>
+                                <li>
+                                    <section>
+                                        <h1 class="title"><b>投票</b></h1>
+                                        <div class="box" style="background-image: linear-gradient(90deg, rgba(233, 233, 233, 1), rgba(172, 172, 172, 1));">
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>全ての投票に共通するルール</b></h3>
+                                                    <div class="box">
+                                                        <p>票が重複していなければ何票でも入れられます。
+                                                        <br>各投票部門はそれぞれ個別に投票する形となります
+                                                        <br>（回答しない投票部門があっても構いません）</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>個人投票の概要・やり方</b></h3>
+                                                    <div class="box">
+                                                        <p>ページリンクがあかさたな順に分かれて並んでいるので、
+                                                        <br>そこから一音ごとモブウマ娘に投票してください。複数投票可能です。</p>
+                                                        <br>もしすでに名前を知っている場合は以下の方法などで投票したほうが便利になります。
+                                                        <ul>
+                                                            <li>ブラウザ内の「検索」をクリックし、投票したい娘の名前を入力し該当の場所まで飛ぶ。</li>
+                                                            <li>Ctrlキー+Fキーを押して、投票したい娘の名前を入力し該当の場所まで飛ぶ。</li>
+                                                        </ul>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>冠名投票の概要・やり方</b></h3>
+                                                    <div class="box">
+                                                        <p>冠名の名称はモブウマ娘図鑑様のサイト内名称を引用して書いております。
+                                                        <br>例："リボン"エチュード（リボン家）
+                                                        <br>例2：トロピカル"スカイ"（スカイ家）　
+                                                        <br>といった冠名に投票可能。
+                                                        <br>複数投票可。</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>髪型投票の概要・やり方</b></h3>
+                                                    <div class="box">
+                                                        <p>髪型の名称はオリジナルの呼び方です。参考画像を元に投票してください。
+                                                        <br>例：ユイイツムニ→サイドテール
+                                                        <br>複数投票可。</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>髪色投票の概要・やり方</b></h3>
+                                                    <div class="box">
+                                                        <p>髪色の名称はモブウマ娘名鑑様のサイト内名称と、
+                                                        <br>赤・紫・青・栗・橙・薄茶・灰紫・灰橙項目を追加して書いております。
+                                                        <br>例：イノセントグリモア→白（葦毛）
+                                                        <br>複数投票可。</p>    
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>勝負服投票の概要・やり方</b></h3>
+                                                    <div class="box">
+                                                        <p>勝負服の名称・画像はモブウマ娘図鑑様のサイト内名称を一部引用して書いております。
+                                                        <br>投票フォームでは一部の勝負服の種類を簡略化して記載しております。
+                                                        <br>複数投票可。</p>    
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <h3 class="title"><b>投票フォーム一覧</b></h3>
+                                                    <div class="box">
+                                                        <a href="https://forms.gle/tNKKB91nwaXwLZwz5"target="_blank" rel="noopener noreferrer" class="btn-sticky">個人</a>
+                                                        <a href="https://forms.gle/XpX4uhDr5bDLZy899"target="_blank" rel="noopener noreferrer" class="btn-sticky1">冠名</a>
+                                                        <a href="https://forms.gle/u6ijaTzWvPYuKmtE6"target="_blank" rel="noopener noreferrer" class="btn-sticky2">髪型</a>
+                                                        <a href="https://forms.gle/aEbLc39WJeBr5Tae8"target="_blank" rel="noopener noreferrer" class="btn-sticky3">髪色</a>
+                                                        <a href="https://forms.gle/VHg2DGd1tWfszQq79"target="_blank" rel="noopener noreferrer" class="btn-sticky4">勝負服</a>
+                                                        <a href="https://forms.gle/FhhbEf8RkkKAxL7Y8"target="_blank" rel="noopener noreferrer" class="btn-sticky5">アンケート</a>    
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </div>
+                                    </section>
+                                </li>
+                            </section>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="footer02">
+                <ul class="menu">
+                  <li>モブウマ娘総選挙は個人主催・運営の非公式人気投票企画です。<br>
+                    モブウマ娘総選挙に関して主催者以外へのお問い合わせはご遠慮ください。</li>
+                </ul>
+            </div>
+            <script src="js/jquery.min.js"></script>
+            <!-- jQuery Easing -->
+                <script src="js/jquery.easing.1.3.js"></script>
+            <!-- Bootstrap -->
+                <script src="js/bootstrap.min.js"></script>
+            <!-- Waypoints -->
+                <script src="js/jquery.waypoints.min.js"></script>
+            <!-- Stellar -->
+                <script src="js/jquery.stellar.min.js"></script>
+            <!-- Superfish -->
+                <script src="js/hoverIntent.js"></script>
+                <script src="js/superfish.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <!--自作のJS-->
+                <script src="9-2-1.js"></script>
+            <!-- Main JS (Do not remove) -->
+                <script src="js/main.js"></script>
+    </body>
+</html>
